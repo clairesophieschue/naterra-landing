@@ -1197,6 +1197,16 @@ button {
   gap: 12px;
   justify-content: center;
 }
+.nt-download__actions .nt-btn { min-width: 180px; }
+.nt-download__guide {
+  display: block;
+  margin-top: 20px;
+  font-size: 14px;
+  color: rgba(255,255,255,0.44);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.nt-download__guide:hover { color: rgba(255,255,255,0.70); }
 
 /* ================================================================
    FOOTER
@@ -1524,4 +1534,42 @@ button {
   .nt-legal-panel { padding: 24px 18px 32px; border-radius: 14px; margin: 0; }
   .nt-legal-item > summary { padding: 14px 16px; font-size: 14px; }
   .nt-legal-answer { padding: 14px 16px 18px; font-size: 14px; }
+}
+
+/* ================================================================
+   SECTION NOTRE VISION — Une nature à partager
+   ================================================================ */
+#vision { padding: 80px 0; }
+.nt-values__inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 72px;
+  max-width: 1000px;
+}
+.nt-values__left  { grid-column: 1; }
+.nt-vision-points { grid-column: 2; align-self: start; display: flex; flex-direction: column; gap: 14px; }
+.nt-values__body  { font-size: 16px; color: rgba(255,255,255,0.72); line-height: 1.7; }
+.nt-values__body + .nt-values__body { margin-top: 16px; }
+
+.nt-val { display: flex; align-items: flex-start; gap: 14px; }
+.nt-val__num {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 9px;
+  border-radius: 999px;
+  background: rgba(40,226,15,0.14);
+  color: var(--nt-green);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  line-height: 1;
+  margin-top: 3px;
+}
+.nt-val__text { font-size: 14px; color: rgba(255,255,255,0.70); line-height: 1.55; margin: 0; }
+
+@media (max-width: 860px) {
+  .nt-values__inner { grid-template-columns: 1fr; row-gap: 32px; }
+  .nt-vision-points { grid-column: 1; }
 }
