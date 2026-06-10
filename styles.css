@@ -1591,7 +1591,7 @@ button {
 }
 .nt-val__text { font-size: 16px; color: rgba(255,255,255,0.70); line-height: 1.7; margin: 0; }
 
-.nt-vision__cta { margin-top: 32px; }
+.nt-vision__cta { margin-top: 40px; }
 
 @media (max-width: 860px) {
   .nt-vision-points { grid-template-columns: 1fr; }
