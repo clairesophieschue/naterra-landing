@@ -1537,6 +1537,25 @@ button {
 }
 
 /* ================================================================
+   PAGE À PROPOS
+   ================================================================ */
+.nt-about__h2 {
+  font-size: clamp(18px, 2.5vw, 24px);
+  font-weight: 700;
+  color: rgba(255,255,255,0.88);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  margin: 40px 0 20px;
+}
+.nt-legal-panel > .nt-about__h2:first-child { margin-top: 0; }
+.nt-about__p {
+  font-size: 16px;
+  color: rgba(255,255,255,0.62);
+  line-height: 1.7;
+  margin: 0 0 18px;
+}
+
+/* ================================================================
    SECTION NOTRE VISION — Une nature à partager
    ================================================================ */
 #vision { padding: 80px 0; }
